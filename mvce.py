@@ -13,5 +13,5 @@ file = earthaccess.download(results, "earthaccess_data")[0]
 
 cwd = os.getcwd()
 fh = Dataset(os.path.join(cwd, file), mode="r")
-fire_mask = fh.variables["fire mask"][:].data
-FP_line = fh.variables["FP_line"][:].data
+print(fh.variables["fire mask"].shape)
+print(fh.variables["FP_line"].shape)
